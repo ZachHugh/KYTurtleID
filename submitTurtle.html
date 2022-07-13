@@ -5,22 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit a Turtle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul><li><a href ="home.html">Home</a></li></ul>
+    <div class="contentContainer">
+        <nav>
+            <ul><li><a href ="home.html">Home</a></li></ul>
 
-        <ul><li><a href ="idTurtle.html">ID a Turtle</a></li></ul>
+            <ul><li><a href ="idTurtle.html">ID a Turtle</a></li></ul>
 
-        <ul><li><a href ="education.html">Importance of Turtles</a></li></ul>
+            <ul><li><a href ="education.html">Importance of Turtles</a></li></ul>
 
-        <ul><li><a href ="attractRepel.html">Attracting and Repeling Turtles</a></li></ul>
-    </nav>
+            <ul><li><a href ="attractRepel.html">Attracting and Repeling Turtles</a></li></ul>
+        </nav>
+    <div class="formContainer">
+        <div>
+            <label>Time: <input type="time" name="time" id="time">
+            <label>Date: <input type="datetime-local" name="date" id="date"></label>
+            <label>Email: <input type="text"></Label>
+            <label>County: <input type="text"></label>
+            <input type="file" id="turteFile" name="turtlePicture">
+            <input type="submit">
+        </div>
+    </div>
+</div>
 </body>
 <footer>
-   <a href="https://fw.ky.gov/Pages/default.aspx" ><img src ="pictures/icons/govLogo.png" alt = "Department of Fish and Wildlife Resources"></a>
-   <img src="pictures/icons/facebookLogo.png" alt="Our Facebook group">
-   <img src="pictures/icons/twitterLogo.png" alt="Our Twitter page">
-   <img src="pictures/icons/instagramLogo.png" alt="Our Instagram account">
+    <div class="linksContainer">
+        <a href="https://fw.ky.gov/Pages/default.aspx" ><img src ="pictures/icons/govLogo.png" alt = "Department of Fish and Wildlife Resources"></a>
+        <img src="pictures/icons/facebookLogo.png" alt="Our Facebook group">
+        <img src="pictures/icons/twitterLogo.png" alt="Our Twitter page">
+        <img src="pictures/icons/instagramLogo.png" alt="Our Instagram account">
+    </div>
 </footer>
 </html>

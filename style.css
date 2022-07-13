@@ -1,0 +1,33 @@
+.contentContainer{
+    display: flex;
+    flex-flow: row;
+}
+
+.linksContainer{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linksContainer>img {
+
+    max-width: auto;
+    max-height: 75px;
+
+}
+
+.linksContainer>a {
+    display:inline-block;
+}
+
+a img {
+    max-height:75px;
+    max-width:auto;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+}
