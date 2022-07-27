@@ -3,16 +3,27 @@
     flex-flow: row;
 }
 
-.linksContainer{
+.formContainer{
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.formContainer>label{
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .linksContainer>img {
-
     max-width: auto;
     max-height: 75px;
 
@@ -25,9 +36,4 @@
 a img {
     max-height:75px;
     max-width:auto;
-}
-
-.formContainer{
-    display: flex;
-    flex-direction: column;
 }
