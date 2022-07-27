@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Identify a Turtle</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="contentContainer">
@@ -19,87 +20,92 @@
             <ul><li><a href ="attractRepel.html">Attracting and Repeling Turtles</a></li></ul>
         </nav>
     <div class="formContainer">
-        <label>Primary Color: </label>
-        <select name="color" id="color">
-            <option value="null"></option>
-            <option value="black">Black</option>
-            <option value="brown">Brown</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-        </select>
-        <label>Shell Type: </label>
-        <select name="shell" id="shell">
-            <option value="null"></option>
-            <option value="dome">Dome</option>
-            <option value="smooth">Smooth</option>
-            <option value="soft">Soft</option>
-            <option value="spiky">Spiky</option>
-        </select>
-        <label>Features: </label>
-        <select name="features">
-            <option value="null"></option>
-            <option value="redEars">Red marks on side of head</option>
-            <option value="bumps">Slight bumps/knobs down middle of shell</option>
-            <option value="spots">Spots/splotches on skin/shell</option>
-            <option value="stripes">Stripes/lines on skin/shell</option>
-            <option value="superSpiky">Very spiky shell</option>
-        </select>
-        <input type="reset">
+        <form>
+            <label>Primary Color: </label>
+            <select name="color" id="color">
+                <option value="all"></option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <label>Shell Type: </label>
+            <select name="shell" id="shell">
+                <option value="all"></option>
+                <option value="dome">Dome</option>
+                <option value="smooth">Smooth</option>
+                <option value="soft">Soft</option>
+                <option value="spiky">Spiky</option>
+            </select>
+            <label>Features: </label>
+            <select name="features" id="features">
+                <option value="all"></option>
+                <option value="redEars">Red marks on side of head</option>
+                <option value="bumps">Slight bumps/knobs down middle of shell</option>
+                <option value="snorkle">Snorkle Nose</option>
+                <option value="spots">Spots/splotches on skin/shell</option>
+                <option value="stripes">Stripes/lines on skin/shell</option>
+                <option value="superSpiky">Very spiky shell</option>
+            </select>
+        
+            <input type="reset">
+        </form>
+        <script>filter()</script>
     </div>
     <div class="turtleGallery">
-        <div class="turtle">
+        <div class="turtle all black brown spiky superSpiky">
             <img src="pictures/turtles/alligatorSnappingTurtle.jpg" alt="Alligator Snapping Turtle">
             <p>Alligator Snapping Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all brown green smooth bumps stripes">
             <img src="pictures/turtles/commonMapTurtle.jpg" alt="Common Map Turtle">
             <p>Common Map Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all brown dome stripes">
             <img src="pictures/turtles/commonMuskTurtle.jpg" alt="Common Musk Turtle">
             <p>Common Musk Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all brown smooth">
             <img src="pictures/turtles/commonSnappingTurtle.jpg" alt="Common Snapping Turtle">
             <p>Common Snapping Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all yellow dome spots">
             <img src="pictures/turtles/easternBoxTurtle.jpg" alt="Eastern Box Turtle">
             <p>Eastern Box Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all brown dome">
             <img src="pictures/turtles/easternMudTurtle.jpg" alt="Eastern Mud Turtle">
             <p>Eastern Mud Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all green brown smooth stripes">
             <img src="pictures/turtles/easternRiverCooter.jpg" alt="Eastern River Cooter">
             <p>Eastern River Cooter</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all green brown soft snorkle">
             <img src="pictures/turtles/easternSpinySoftshell.jpg" alt="Eastern Spiny Softshell">
             <p>Eastern Spiny Softshell</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all green brown smooth bumps">
             <img src="pictures/turtles/falseMapTurtle.jpg" alt="False Map Turtle">
             <p>False Map Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all green smooth stripes">
             <img src="pictures/turtles/midlandPaintedTurtle.jpg" alt="Midland Painted Turtle">
             <p>Midland Painted Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all brown soft snorkle">
             <img src="pictures/turtles/midlandSoftshellTurtle.jpg" alt="Midland Softshell Turtle">
             <p>Midland Softshell Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all green brown smooth bumps stripes">
             <img src="pictures/turtles/mississippiMapTurtle.jpg" alt="Mississippi Map Turtle">
             <p>Mississippi Map Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all brown yellow smooth bumps stripes">
             <img src="pictures/turtles/ouachitaMapTurtle.jpg" alt="Ouachita Map Turtle">
             <p>Ouachita Map Turtle</p>
         </div>
-        <div class="turtle">
+        <div class="turtle all green brown smooth stripes redEars">
             <img src="pictures/turtles/redEaredSlider.jpg" alt="Red-Eared Slider">
             <p>Red-Eared Slider</p>
         </div>
