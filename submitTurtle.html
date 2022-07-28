@@ -20,10 +20,10 @@
             <ul><li><a href ="attractRepel.html">Attracting and Repeling Turtles</a></li></ul>
         </nav>
     <div class="formContainer">
-        <form>
+        <form onsubmit="doubleCheck()">
             <Label>Name*: </Label><input placeholder="Turtle Fan" type="text" id="name" required>
             <label>Date*: </label><input type="date" id="date" required>
-            <label>Email*: </Label><input placeholder="turtleFan@shell.com" type="text" id="email" required>
+            <label>Email*: </Label><input placeholder="turtleFan@shell.com" type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <label>County*: </label>
             <select name="county" id="county" required>
                 <option value="Adair">Adair</option> 
@@ -148,7 +148,8 @@
                 <option value="Woodford">Woodford</option>
             </select>
 
-            <label>Turtle Picture*: </label><input type="file" id="turteFile" name="turtlePicture" accept="image/gif, image/jpeg, image/png" required>
+            <label>Turtle Picture*: </label><input type="file" id="turtleFile" 
+            name="turtlePicture" accept="image/gif, image/jpeg, image/png" required>
             <input type="reset"><input type="submit">
         </form>
     </div>

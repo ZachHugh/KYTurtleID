@@ -40,12 +40,16 @@ function filter(){
     setTimeout(filter, 1);//Constantly checks to make update.
 }
 
-function confirmation(){
+function doubleCheck(){
     let name = document.getElementById("name").value;
     let date = document.getElementById("date").value;
     let email = document.getElementById("email").value;
     let county = document.getElementById("county").value;
-   
-    
+    let confirmation = false;
 
+    if(confirm("Hey, " + name + " is this information correct?\n\n" +
+                    "Name: " + name + "\nDate: " + date + "\nEmail: " +
+                    email + "\nCounty: " + county)){
+                        confirmation = true;
+                    }
 }
