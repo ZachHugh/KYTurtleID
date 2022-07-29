@@ -45,7 +45,7 @@ li>a:hover{
 .contentContainer{
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -140,9 +140,23 @@ footer{
     font-size: 150%;
 }
 
+/*For tablets.*/
+@media only screen and (min-width:600px){
+   .nav{
+    translate: 1000px;
+   }
 
-/*Displays a two column layout in attract and repel page.*/
-@media only screen and (min-width:640px){
+
+
+   .formContainer{
+     flex-wrap: wrap;
+   }
+
+    .turtleSlide>img{
+        max-width: 150%;
+        max-height: 150%;
+    }
+
     .row{
         display: flex;
         flex-flow: row;
@@ -151,5 +165,20 @@ footer{
     .attractColumn{
         display: flex;
         flex-flow: column;
+    }
+
+    .footer{
+        flex: 50%;
+    }
+}
+
+/*For Personal computers.*/
+@media only screen and (min-width: 992px){
+    .row{
+        flex:50%
+    }
+
+    .footer>h7{
+        font-size: 30%;
     }
 }

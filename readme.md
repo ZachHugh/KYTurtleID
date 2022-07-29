@@ -15,5 +15,5 @@ Features included for Javascript include:
 1. In the "ID a Turtle" page, the javascript is used to use values obtained from the selection form to hide some of turtles in the gallery that do not
 have those chosen traits.
 2. The "Submit a Turtle" page allows the user to input a picture of a turtle they need help identifying. Once all required fields are filled out, with 
-the email field requiring an input that follows a the pattern "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$", the site will give a confirmation request to
+the email field requiring an input that follows the pattern "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$", the site will give a confirmation request to
 user, show the data inputed and ask if the data is correct.
