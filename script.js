@@ -18,11 +18,14 @@ function carouselHero(){
     setTimeout(carouselHero, 3000);//Changes slide every 3 seconds.
 }
 
+//This will be used for some loops on idTurtle page.
+var gallery = document.getElementsByClassName("turtle");
+
 function filter(){
     let filterColor = document.getElementById("color").value;
     let filterShell = document.getElementById("shell").value;
     let filterFeatures = document.getElementById("features").value;
-    let gallery = document.getElementsByClassName("turtle");
+   
 
     //Loop through gallery
     for(i = 0; i < gallery.length; i++)

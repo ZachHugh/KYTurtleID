@@ -1,45 +1,61 @@
+body{background-color:#f6e3c5;}
+
+
+nav{
+    max-width: 200%;
+    text-align: center;
+    font-size: 200%;
+}
+
+ul{
+    list-style: none;
+    margin-right: 2.5rem;
+}
+
+li{
+    background-color:#6CC4A1;
+    font-size:95%;
+    text-align: center;
+    text-decoration: none;
+    border-style: inset ;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+li>a:link{
+    background-color:#6CC4A1;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li:hover{
+    background-color:#A0D995;
+}
+li>a:hover{
+    background-color:#A0D995;
+    color:#f6e3c5;
+}
+
+.carousel{
+    margin-bottom: 100px;
+}
+
 .contentContainer{
     display: flex;
-    flex-flow: row;
-}
-
-.formContainer{
-    padding-left: 10%;
-    padding-bottom: 10%;
-}
-
-.formContainer>label{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 15px;
-}
-
-footer{
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.linksContainer>img {
-    max-width: auto;
-    max-height: 75px;
-
-}
-
-.linksContainer>a {
-    display:inline-block;
-}
-
-a img {
-    max-height:75px;
-    max-width:auto;
+    flex-wrap:wrap;
+    height: 100%;
 }
 
 .turtleSlide{
     display: none;
+}
+
+.turtleSlide>img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .fade {
@@ -50,4 +66,90 @@ a img {
 @keyframes fade{
     from {opacity: .5}
     to {opacity: 1}
+}
+
+.formContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+select{
+    width:75%;
+    padding:.5rem;
+    border-radius: 10px;
+    border-color:#6CC4A1;
+    margin-bottom: 1%;
+    color: #6CC4A1;
+}
+
+input{
+    width:75%;
+    padding:.5rem;
+    margin-top: .5rem;
+    margin-bottom: .75rem;
+}
+
+.turtleGallery{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content:space-evenly;
+    flex-basis: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4CACBC;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:20%;
+    position:sticky;
+}
+
+.linksContainer>a, img {
+    padding-top: 10%;
+    max-width: auto;
+    max-height: 6rem;
+    filter: drop-shadow(0 0 .25rem black);
+}
+
+.articleContainer{
+    font-size: 150%;
+    margin-left:1rem ;
+    margin-right:1rem;
+}
+
+/*Displays only in one column for mobile.*/
+.column>img{
+    size: 2000%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+}
+
+
+/*Displays a two column layout in attract and repel page.*/
+@media only screen and (min-width:750px){
+    .row{
+        display: flex;
+        flex-flow: row;
+    }
+
+    .attractColumn{
+        display: flex;
+        flex-flow: column;
+    }
 }
